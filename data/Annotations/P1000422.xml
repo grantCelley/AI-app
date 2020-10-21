@@ -1,0 +1,26 @@
+<annotation>
+	<folder>app_data</folder>
+	<filename>P1000422.JPG</filename>
+	<path>/home/grant/Desktop/app_data/P1000422.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4896</width>
+		<height>3672</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Seam Ripper</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2826</xmin>
+			<ymin>830</ymin>
+			<xmax>3633</xmax>
+			<ymax>2307</ymax>
+		</bndbox>
+	</object>
+</annotation>

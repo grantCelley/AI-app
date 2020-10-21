@@ -8,4 +8,4 @@ else
     source labelenv/bin/activate
 fi
 
-labelImg data/*
+labelImg

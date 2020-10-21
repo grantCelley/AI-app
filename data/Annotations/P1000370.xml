@@ -1,0 +1,26 @@
+<annotation>
+	<folder>app_data</folder>
+	<filename>P1000370.JPG</filename>
+	<path>/home/grant/Desktop/app_data/P1000370.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4896</width>
+		<height>3672</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Zipper Foot</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1711</xmin>
+			<ymin>1163</ymin>
+			<xmax>3448</xmax>
+			<ymax>2000</ymax>
+		</bndbox>
+	</object>
+</annotation>

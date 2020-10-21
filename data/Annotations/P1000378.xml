@@ -1,0 +1,26 @@
+<annotation>
+	<folder>app_data</folder>
+	<filename>P1000378.JPG</filename>
+	<path>/home/grant/Desktop/app_data/P1000378.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4896</width>
+		<height>3672</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Sliding Button Foot</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1489</xmin>
+			<ymin>81</ymin>
+			<xmax>4607</xmax>
+			<ymax>2611</ymax>
+		</bndbox>
+	</object>
+</annotation>
