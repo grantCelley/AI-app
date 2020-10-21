@@ -1,7 +1,7 @@
 <annotation>
-	<folder>app_data</folder>
+	<folder>JPEGImages</folder>
 	<filename>P1000368.JPG</filename>
-	<path>/home/grant/Desktop/app_data/P1000368.JPG</path>
+	<path>/home/grant/Projects/AI-app/data/JPEGImages/P1000368.JPG</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,7 +12,7 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>Pesser Foot</name>
+		<name>Presser Foot</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
