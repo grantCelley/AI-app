@@ -5,6 +5,7 @@ from detectron2.data.datasets import register_pascal_voc
 from detectron2.config import get_cfg
 from detectron2.engine import DefaultTrainer
 from detectron2 import model_zoo
+from detectron2.modeling import build_model
 
 classNames=['Presser Foot', 'Zipper Foot','Sliding Button Foot', 'Blind Hem Foot', 'Bobon', 'Seam Ripper', 'Seam Ripper Lid', 'Screw Driver']
 
@@ -23,7 +24,10 @@ cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 8   # faster, and good enough for thi
 cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1  # only has one class (ballon). (see https://detectron2.readthedocs.io/tutorials/datasets.html#update-the-config-for-new-datasets)
 
 
+
 os.makedirs(cfg.OUTPUT_DIR, exist_ok=True)
 trainer = DefaultTrainer(cfg) 
 trainer.resume_or_load(resume=False)
 trainer.train()
+
+model = build_model(cfg)
