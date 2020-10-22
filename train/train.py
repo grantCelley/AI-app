@@ -1,12 +1,7 @@
 import torch
 import torchvision
-from torchvision.datasets import VisionDataset
-from PIL import Image
+from detectron2.data.datasets import register_pascal_voc
 
-class CustomVOCDataset(VisionDataset):
-    """
+classNames=['Presser Foot', 'Zipper Foot','Sliding Button Foot', 'Blind Hem Foot', 'Bobon', 'Seem Ripper', 'Seem Ripper Lid', 'Screw Driver']
 
-    """
-    def __init__(self, root, ):
-
-
+register_pascal_voc("Janome 2212", "../data",'train', 2020, class_names=classNames)
