@@ -1,3 +1,4 @@
 labelenv
 train/venv
 .vscode
+*.swp
