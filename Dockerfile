@@ -1,14 +1,18 @@
-From nvidia/cuda:10.2-devel-ubuntu18.04
+FROM tensorflow/tensorflow:2.3.1-gpu
 
-ARG PYTHON_VERSION:3.8
+RUN apt-get update && apt-get install -y \
+    git \
+    gpg-agent \
+    python3-cairocffi \
+    protobuf-compiler \
+    python3-pil \
+    python3-lxml \
+    python3-tk \
+    wget
 
-COPY . /APP
 
-WORKDIR /APP
+RUN git clone --depth 1 https://github.com/tensorflow/models && \
+  protoc models/research/object_detection/protos/*.proto --pyhton_out=models/research && \
+  cp models/research/object_detection/packages/tf2/setup.py models/research && \
+  python3 -m pip install -q models/research
 
-RUN apt-get update && apt-get install -y python3 python3-pip
-
-RUN pip3 install torch torchvision \
-  detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.6/index.html
-
-#CMD python3 /App/train/train.py
