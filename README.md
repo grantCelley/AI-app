@@ -22,3 +22,5 @@ We will train the data off of this data.
 
 Android. It will be easy for my mom to have her phone do the heave lifting. If I were to use a server-host it would take too long for lag.
 
+
+This Is not working. There is a problem with pytorch and Detectron2
